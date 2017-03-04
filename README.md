@@ -198,3 +198,27 @@ var details = e.SelectedItem as Session;
 Link: [TextToSpeech nuget](https://www.nuget.org/packages/Xam.Plugins.TextToSpeech/)
 
 ##Run your Application to see a list of Pokemons :)
+
+###Azure Mobile Apps
+````csharp
+module.exports.get = function (request, response) {
+
+        var query = {
+
+            sql: 'Select * from Pokemon',
+ 
+        };
+
+
+        request.azureMobile.data.execute(query)
+
+            .then(function (results) {
+
+               response.setHeader('Content-Type', 'application/json');
+
+                response.status(200).send(JSON.stringify(results));
+
+            });
+
+ };
+```
