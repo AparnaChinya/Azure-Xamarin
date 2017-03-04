@@ -108,10 +108,39 @@ Sessions = new ObservableCollection<Session>();
 ```
 
 ###Set the title of the page as “Sessions”
-```csharp
+````csharp
 Title = "Sessions";
 ```
+###Create GetSessions Task
 
+````csharp
+async Task GetSessions()
+
+        {
+
+
+            using (var client = new System.Net.Http.HttpClient())
+
+            {
+
+                var json = await client.GetStringAsync("https://apchin-mobileapp.azurewebsites.net/api/Poki");
+
+                //Deserialize json
+
+                var items = JsonConvert.DeserializeObject<List<Session>>(json);
+
+                myList.ItemsSource = items;
+
+                //Load sessions into list
+
+
+            }
+
+
+
+        }
+
+  ```
 ###Add event handler for ItemSelected event on the ListView. Type the below mentioned code and hit tab. It will create the definition of the event handler.
 
 ````csharp
