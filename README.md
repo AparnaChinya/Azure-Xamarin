@@ -245,4 +245,4 @@ module.exports.get = function (request, response) {
 9.Go to your Client app in Visual studio and replace the name of my AzureMobileApp REST service with yours.
 eg: <name>.azurewebsites.net/api/Pokemon.
 
-### Your own Pokemon app is not ready :)
+### Your own Pokemon app is now ready :)
