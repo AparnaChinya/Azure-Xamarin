@@ -98,7 +98,6 @@ using Xamarin.Forms;
 
 ````csharp
 public ObservableCollection<Session> Sessions { get; set; }
-public ICommand GetSessionsCommand { get; set; }
 ```
 
 ###In the constructor, initialize the class variable:
