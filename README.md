@@ -107,7 +107,7 @@ Add code snippet for the GetSessions Task
         {
             using (var client = new System.Net.Http.HttpClient())
             {
-               var json = await client.GetStringAsync("https://apchin-mobileapp.azurewebsites.net/api/Poki");
+               var json = await client.GetStringAsync("https://pokidemo.azurewebsites.net/api/Poki");
 
                 //Deserialize json
 
