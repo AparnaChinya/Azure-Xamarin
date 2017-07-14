@@ -82,18 +82,6 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 ```
 
-In class PageOne, declare these Class variables:
-
-```csharp
-public ObservableCollection<Session> Sessions { get; set; }
-```
-
-In the constructor, initialize the class variable:
-
-```csharp
-Sessions = new ObservableCollection<Session>();
-```
-
 Set the title of the page as “Sessions”
 ```csharp
 Title = "Sessions";
@@ -227,4 +215,5 @@ eg: <name>.azurewebsites.net/api/Pokemon.
 
 ## Your own Pokemon app is now ready :)
 
+![Pokemon App!](https://github.com/AparnaChinya/Azure-Xamarin/blob/master/PokemonsScreenshot.JPG)
 
